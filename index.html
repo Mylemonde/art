@@ -128,60 +128,54 @@
         max-width: 300px;
       }
     }
-      /* Footer (responsive) */
-    .site-footer{background:#fff;color:#111;padding:36px 20px}
-    .site-footer a{color:#fff;text-decoration:none}
-    .site-footer .wrap{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:80px repeat(3,1fr);gap:28px;align-items:start}
-    .site-footer .brand-vertical{writing-mode:vertical-rl;transform:rotate(180deg);font-weight:700;letter-spacing:1px}
-    .site-footer h4{margin:0 0 8px;font-size:1.02em}
-    .site-footer p{margin:0 0 6px}
-    @media (max-width:768px){
-      .site-footer .wrap{grid-template-columns:1fr;gap:16px}
-      .site-footer .brand-vertical{display:none}
-      .site-footer h4{font-size:1em}
-      .site-footer p{font-size:.95em;line-height:1.5}
+
+    /* ✅ Updated Responsive Footer */
+    .site-footer {
+      background: #fff;
+      color: #000;
+      padding: 40px 20px;
     }
-  footer {
-  background: #fff;
-  color: #000;
-  padding: 40px 40px;
-  text-align: left;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 60px;
-  font-size: 0.9em;
-}
 
-footer > div {
-  flex: 1 1 200px;
-  min-width: 200px;
-}
+    .site-footer a {
+      color: #000;
+      text-decoration: none;
+    }
 
-footer .vertical {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  font-weight: bold;
-  font-size: 1.8em;
-  letter-spacing: 2px;
-}
+    .site-footer .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 80px repeat(3, 1fr);
+      gap: 40px;
+      align-items: start;
+      text-align: left;
+      justify-content: center;
+    }
 
-@media (max-width: 768px) {
-  footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 25px;
-  }
-  footer .vertical {
-    display: none;
-  }
-  footer > div {
-    min-width: auto;
-  }
-}
-</style>
+    .site-footer .brand-vertical {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 1.3em;
+    }
+
+    @media (max-width: 768px) {
+      .site-footer .wrap {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+      }
+
+      .site-footer .brand-vertical {
+        display: none;
+      }
+
+      .site-footer p, .site-footer h4 {
+        margin: 4px 0;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -193,25 +187,26 @@ footer .vertical {
   <section class="artists">
     <h1>Our Artists</h1>
 
-    <div class="artist"><img src="image\Adam-Mandarano.webp" alt="Adam Mandarano"><div class="info"><h2>Adam Mandarano</h2><p>Weaving and textile artist, known for intricate handmade fabrics and detailed craftsmanship.</p><div class="links"><a href="https://www.studioa.org.au/pages/adam-mandarano" target="_blank" rel="noopener">Learn more</a></div></div></div>
-    <div class="artist"><img src="image\Annette-Galstaun.webp" alt="Annette Galstaun"><div class="info"><h2>Annette Galstaun</h2><p>Creates expressive, vibrant paintings exploring personal memories and daily life.</p><div class="links"><a href="https://www.studioa.org.au/pages/annette-galstaun" target="_blank" rel="noopener">Learn more</a></div></div></div>
-    <div class="artist"><img src="image\Catherine-McGuinness.webp" alt="Catherine McGuiness"><div class="info"><h2>Catherine McGuiness</h2><p>Painter using bold colour and texture to build rhythmic, layered surfaces.</p><div class="links"><a href="https://www.studioa.org.au/pages/catherine-mcguiness" target="_blank" rel="noopener">Learn more</a></div></div></div>
-    <div class="artist"><img src="image\Damian-Showyin.webp" alt="Damian Showyin"><div class="info"><h2>Damian Showyin</h2><p>Playful painter depicting characters and motion with dynamic compositions.</p><div class="links"><a href="https://www.studioa.org.au/pages/damian-showyin" target="_blank" rel="noopener">Learn more</a></div></div></div>
-    <div class="artist"><img src="image\Daniel-Kim.webp" alt="Daniel Kim"><div class="info"><h2>Daniel Kim</h2><p>Portrait artist blending classical methods with modern tone to capture human emotion.</p><div class="links"><a href="https://www.studioa.org.au/pages/daniel-kim" target="_blank" rel="noopener">Learn more</a></div></div></div>
-    <div class="artist"><img src="image\Emily-Crockford.webp" alt="Emily Crockford"><div class="info"><h2>Emily Crockford</h2><p>Known for saturated colours and patterned surfaces; creator of major Sydney murals.</p><div class="links"><a href="https://www.studioa.org.au/pages/emily-crockford" target="_blank" rel="noopener">Learn more</a></div></div></div>
-    <div class="artist"><img src="image\Greg-Sindel.webp" alt="Greg Sindel"><div class="info"><h2>Greg Sindel</h2><p>Comic book storyteller whose graphic worlds combine humour and vibrant energy.</p><div class="links"><a href="https://www.studioa.org.au/pages/greg-sindel" target="_blank" rel="noopener">Learn more</a></div></div></div>
-    <div class="artist"><img src="image\Guy-Fredericks.webp" alt="Guy Fredericks"><div class="info"><h2>Guy Fredericks</h2><p>Figurative painter drawing from memory and imagination to create emotive works.</p><div class="links"><a href="https://www.studioa.org.au/pages/guy-fredericks" target="_blank" rel="noopener">Learn more</a></div></div></div>
-    <div class="artist"><img src="image\Katrina-Brennan.webp" alt="Katrina Brennan"><div class="info"><h2>Katrina Brennan</h2><p>Geometric and optical-inspired compositions exploring colour vibration.</p><div class="links"><a href="https://www.studioa.org.au/pages/katrina-brennan" target="_blank" rel="noopener">Learn more</a></div></div></div>
-    <div class="artist"><img src="image\Lauren-Kerjan.webp" alt="Lauren Kerjan"><div class="info"><h2>Lauren Kerjan</h2><p>Creates delicate drawings and abstracted forms inspired by the natural world.</p><div class="links"><a href="https://www.studioa.org.au/pages/lauren-kerjan" target="_blank" rel="noopener">Learn more</a></div></div></div>
-    <div class="artist"><img src="image\Lex Tan.webp" alt="Lex Tan"><div class="info"><h2>Lex Tan</h2><p>Illustrator and painter using defined lines and contrast to tell visual stories.</p><div class="links"><a href="https://www.studioa.org.au/pages/lex-tan" target="_blank" rel="noopener">Learn more</a></div></div></div>
-    <div class="artist"><img src="image\LisaTindall.webp" alt="Lisa Tindall"><div class="info"><h2>Lisa Tindall</h2><p>Combines embroidery and painting to weave personal stories and emotion.</p><div class="links"><a href="https://www.studioa.org.au/pages/lisa-tindall" target="_blank" rel="noopener">Learn more</a></div></div></div>
-    <div class="artist"><img src="image\Matt-Calandra.webp" alt="Mathew Calandra"><div class="info"><h2>Mathew Calandra</h2><p>Painter of bold, spontaneous compositions and confident mark-making.</p><div class="links"><a href="https://www.studioa.org.au/pages/mathew-calandra" target="_blank" rel="noopener">Learn more</a></div></div></div>
-    <div class="artist"><img src="image\Meagan-Pelham.webp" alt="Meagan Pelham"><div class="info"><h2>Meagan Pelham</h2><p>Romantic watercolours and poems about love, dreams and beauty.</p><div class="links"><a href="https://www.studioa.org.au/pages/meagan-pelham" target="_blank" rel="noopener">Learn more</a></div></div></div>
-    <div class="artist"><img src="image\Skye-Saxon.webp" alt="Skye Saxon"><div class="info"><h2>Skye Saxon</h2><p>Abstract painter exploring emotion and contrast through monochrome palettes.</p><div class="links"><a href="https://www.studioa.org.au/pages/skye-saxon" target="_blank" rel="noopener">Learn more</a></div></div></div>
-    <div class="artist"><img src="image\Thom-Roberts-A.webp" alt="Thom Roberts"><div class="info"><h2>Thom Roberts</h2><p>Creates imaginative multi-eyed figures and transport-inspired imagery.</p><div class="links"><a href="https://www.studioa.org.au/pages/thom-roberts" target="_blank" rel="noopener">Learn more</a></div></div></div>
-    <div class="artist"><img src="image\VictoriaAtkinson.webp" alt="Victoria Atkinson"><div class="info"><h2>Victoria Atkinson</h2><p>Produces balanced, delicate drawings exploring texture and form.</p><div class="links"><a href="https://www.studioa.org.au/pages/victoria-atkinson" target="_blank" rel="noopener">Learn more</a></div></div></div>
+    <div class="artist"><img src="image/Adam-Mandarano.webp" alt="Adam Mandarano"><div class="info"><h2>Adam Mandarano</h2><p>Weaving and textile artist, known for intricate handmade fabrics and detailed craftsmanship.</p><div class="links"><a href="https://www.studioa.org.au/pages/adam-mandarano" target="_blank" rel="noopener">Learn more</a></div></div></div>
+    <div class="artist"><img src="image/Annette-Galstaun.webp" alt="Annette Galstaun"><div class="info"><h2>Annette Galstaun</h2><p>Creates expressive, vibrant paintings exploring personal memories and daily life.</p><div class="links"><a href="https://www.studioa.org.au/pages/annette-galstaun" target="_blank" rel="noopener">Learn more</a></div></div></div>
+    <div class="artist"><img src="image/Catherine-McGuinness.webp" alt="Catherine McGuiness"><div class="info"><h2>Catherine McGuiness</h2><p>Painter using bold colour and texture to build rhythmic, layered surfaces.</p><div class="links"><a href="https://www.studioa.org.au/pages/catherine-mcguiness" target="_blank" rel="noopener">Learn more</a></div></div></div>
+    <div class="artist"><img src="image/Damian-Showyin.webp" alt="Damian Showyin"><div class="info"><h2>Damian Showyin</h2><p>Playful painter depicting characters and motion with dynamic compositions.</p><div class="links"><a href="https://www.studioa.org.au/pages/damian-showyin" target="_blank" rel="noopener">Learn more</a></div></div></div>
+    <div class="artist"><img src="image/Daniel-Kim.webp" alt="Daniel Kim"><div class="info"><h2>Daniel Kim</h2><p>Portrait artist blending classical methods with modern tone to capture human emotion.</p><div class="links"><a href="https://www.studioa.org.au/pages/daniel-kim" target="_blank" rel="noopener">Learn more</a></div></div></div>
+    <div class="artist"><img src="image/Emily-Crockford.webp" alt="Emily Crockford"><div class="info"><h2>Emily Crockford</h2><p>Known for saturated colours and patterned surfaces; creator of major Sydney murals.</p><div class="links"><a href="https://www.studioa.org.au/pages/emily-crockford" target="_blank" rel="noopener">Learn more</a></div></div></div>
+    <div class="artist"><img src="image/Greg-Sindel.webp" alt="Greg Sindel"><div class="info"><h2>Greg Sindel</h2><p>Comic book storyteller whose graphic worlds combine humour and vibrant energy.</p><div class="links"><a href="https://www.studioa.org.au/pages/greg-sindel" target="_blank" rel="noopener">Learn more</a></div></div></div>
+    <div class="artist"><img src="image/Guy-Fredericks.webp" alt="Guy Fredericks"><div class="info"><h2>Guy Fredericks</h2><p>Figurative painter drawing from memory and imagination to create emotive works.</p><div class="links"><a href="https://www.studioa.org.au/pages/guy-fredericks" target="_blank" rel="noopener">Learn more</a></div></div></div>
+    <div class="artist"><img src="image/Katrina-Brennan.webp" alt="Katrina Brennan"><div class="info"><h2>Katrina Brennan</h2><p>Geometric and optical-inspired compositions exploring colour vibration.</p><div class="links"><a href="https://www.studioa.org.au/pages/katrina-brennan" target="_blank" rel="noopener">Learn more</a></div></div></div>
+    <div class="artist"><img src="image/Lauren-Kerjan.webp" alt="Lauren Kerjan"><div class="info"><h2>Lauren Kerjan</h2><p>Creates delicate drawings and abstracted forms inspired by the natural world.</p><div class="links"><a href="https://www.studioa.org.au/pages/lauren-kerjan" target="_blank" rel="noopener">Learn more</a></div></div></div>
+    <div class="artist"><img src="image/Lex%20Tan.webp" alt="Lex Tan"><div class="info"><h2>Lex Tan</h2><p>Illustrator and painter using defined lines and contrast to tell visual stories.</p><div class="links"><a href="https://www.studioa.org.au/pages/lex-tan" target="_blank" rel="noopener">Learn more</a></div></div></div>
+    <div class="artist"><img src="image/LisaTindall.webp" alt="Lisa Tindall"><div class="info"><h2>Lisa Tindall</h2><p>Combines embroidery and painting to weave personal stories and emotion.</p><div class="links"><a href="https://www.studioa.org.au/pages/lisa-tindall" target="_blank" rel="noopener">Learn more</a></div></div></div>
+    <div class="artist"><img src="image/Matt-Calandra.webp" alt="Mathew Calandra"><div class="info"><h2>Mathew Calandra</h2><p>Painter of bold, spontaneous compositions and confident mark-making.</p><div class="links"><a href="https://www.studioa.org.au/pages/mathew-calandra" target="_blank" rel="noopener">Learn more</a></div></div></div>
+    <div class="artist"><img src="image/Meagan-Pelham.webp" alt="Meagan Pelham"><div class="info"><h2>Meagan Pelham</h2><p>Romantic watercolours and poems about love, dreams and beauty.</p><div class="links"><a href="https://www.studioa.org.au/pages/meagan-pelham" target="_blank" rel="noopener">Learn more</a></div></div></div>
+    <div class="artist"><img src="image/Skye-Saxon.webp" alt="Skye Saxon"><div class="info"><h2>Skye Saxon</h2><p>Abstract painter exploring emotion and contrast through monochrome palettes.</p><div class="links"><a href="https://www.studioa.org.au/pages/skye-saxon" target="_blank" rel="noopener">Learn more</a></div></div></div>
+    <div class="artist"><img src="image/Thom-Roberts-A.webp" alt="Thom Roberts"><div class="info"><h2>Thom Roberts</h2><p>Creates imaginative multi-eyed figures and transport-inspired imagery.</p><div class="links"><a href="https://www.studioa.org.au/pages/thom-roberts" target="_blank" rel="noopener">Learn more</a></div></div></div>
+    <div class="artist"><img src="image/VictoriaAtkinson.webp" alt="Victoria Atkinson"><div class="info"><h2>Victoria Atkinson</h2><p>Produces balanced, delicate drawings exploring texture and form.</p><div class="links"><a href="https://www.studioa.org.au/pages/victoria-atkinson" target="_blank" rel="noopener">Learn more</a></div></div></div>
 
   </section>
+
   <footer class="site-footer">
     <div class="wrap">
       <div class="brand-vertical">Studio A</div>
