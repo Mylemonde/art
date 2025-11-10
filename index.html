@@ -128,7 +128,60 @@
         max-width: 300px;
       }
     }
-  </style>
+      /* Footer (responsive) */
+    .site-footer{background:#fff;color:#111;padding:36px 20px}
+    .site-footer a{color:#fff;text-decoration:none}
+    .site-footer .wrap{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:80px repeat(3,1fr);gap:28px;align-items:start}
+    .site-footer .brand-vertical{writing-mode:vertical-rl;transform:rotate(180deg);font-weight:700;letter-spacing:1px}
+    .site-footer h4{margin:0 0 8px;font-size:1.02em}
+    .site-footer p{margin:0 0 6px}
+    @media (max-width:768px){
+      .site-footer .wrap{grid-template-columns:1fr;gap:16px}
+      .site-footer .brand-vertical{display:none}
+      .site-footer h4{font-size:1em}
+      .site-footer p{font-size:.95em;line-height:1.5}
+    }
+  footer {
+  background: #fff;
+  color: #000;
+  padding: 40px 40px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  font-size: 0.9em;
+}
+
+footer > div {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+footer .vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-weight: bold;
+  font-size: 1.8em;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+  footer .vertical {
+    display: none;
+  }
+  footer > div {
+    min-width: auto;
+  }
+}
+</style>
 </head>
 <body>
   <header>
@@ -159,34 +212,32 @@
     <div class="artist"><img src="image\VictoriaAtkinson.webp" alt="Victoria Atkinson"><div class="info"><h2>Victoria Atkinson</h2><p>Produces balanced, delicate drawings exploring texture and form.</p><div class="links"><a href="https://www.studioa.org.au/pages/victoria-atkinson" target="_blank" rel="noopener">Learn more</a></div></div></div>
 
   </section>
-
-  </section>
-    <footer style="background:#fff;color:#000;padding:40px 40px;text-align:left;display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:60px;font-size:0.9em;">
-        <div style="writing-mode: vertical-rl; transform: rotate(180deg); font-weight:bold; font-size:1.8em; letter-spacing:2px;">Studio A</div>
-        <div>
-            <strong>Phone</strong><br>
-            02 9439 1281<br><br>
-            <strong>International Phone</strong><br>
-            +61 2 9439 1281<br><br>
-            <strong>Email</strong><br>
-            hello@studioa.org.au<br><br>
-            <a href="mailto:hello@studioa.org.au" style="color:#fff;text-decoration:none;">hello@studioa.org.au</a>
-        </div>
-        <div>
-            <strong>Address</strong><br>
-            Level 11<br><br>
-            601 Pacific Highway<br><br>
-            St Leonards NSW 2065<br><br>
-            AUSTRALIA
-        </div>
-        <div>
-            <strong>ABN</strong><br>
-            94130786006<br><br>
-            <strong>Australian Charity Number</strong><br>
-            130 786 006<br><br>
-            All donations of $2 or more are tax deductible
-        </div>
-    </footer>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="brand-vertical">Studio A</div>
+      <div>
+        <h4>Phone</h4>
+        <p>02 9439 1281</p>
+        <h4 style="margin-top:10px">International Phone</h4>
+        <p>+61 2 9439 1281</p>
+        <h4 style="margin-top:10px">Email</h4>
+        <p><a href="mailto:hello@studioa.org.au">hello@studioa.org.au</a></p>
+      </div>
+      <div>
+        <h4>Address</h4>
+        <p>Level 11</p>
+        <p>601 Pacific Highway</p>
+        <p>St Leonards NSW 2065</p>
+        <p>AUSTRALIA</p>
+      </div>
+      <div>
+        <h4>ABN</h4>
+        <p>94130786006</p>
+        <h4 style="margin-top:10px">Australian Charity Number</h4>
+        <p>130 786 006</p>
+        <p style="margin-top:10px">All donations of $2 or more are tax deductible</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
-
